@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://mlbb-stats.ridwaanhall.com/api/',
+  baseURL: 'https://openmlbb.fastapicloud.dev/api/',
 });
 
 export default api;

@@ -4,7 +4,7 @@ import Link from "next/link";
 import api from "@/services/api";
 
 async function fetchHeroList()  {
- const res = await api.get("/hero-list/");
+ const res = await api.get("/heroes");
   return res.data.data.records;
 }
 

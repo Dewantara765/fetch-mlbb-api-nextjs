@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import api from "@/services/api";
 async function fetchHero(id: number){
   try {
- const res = await api.get(`/hero-detail/${id}/`);
+ const res = await api.get(`/heroes/${id}/`);
   return res.data.data.records;
  } catch (error : unknown) {
     notFound();
